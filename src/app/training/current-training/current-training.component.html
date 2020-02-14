@@ -1,0 +1,9 @@
+<section fxLayout='column' fxLayoutAlign='center center' class="current-training">
+    <h1>{{exercise.name}}</h1>
+    <mat-progress-spinner mode='determinate' [value]='progress'></mat-progress-spinner>
+    
+    <h1>{{progress}}%</h1>
+    <h3> <a href={{exercise.videoUrl}}>How <mat-icon>youtube_searched_for</mat-icon></a></h3>
+    <p>Keep on going, You can do it!</p>
+    <button mat-raised-button color='accent'(click)='onStop()'>Stop</button>
+</section>
